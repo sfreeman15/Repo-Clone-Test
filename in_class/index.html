@@ -3,22 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    p{
+       color:whitesmoke;
+
+    }
+
+    #large{
+       font-size: 30px;
+        color: black;
+
+
+    }
+
+    .sect{
+        background-color: rgb(7, 80, 80);
+        color: blue;
+    }
+
+    #figcapt{
+        color:black;
+    }
+
+    #wahoo{
+        color:red;
+    }
+
+  </style>
   <title>Week 4 exercise</title>
 </head>
 <body>
-  <div id="header"><h1>This is the about semantic html</h1></div>
-  <div class="section">
-    <h2>Why senmantic html?</h2>
-    <div class="article">
-      <p>Elements such as &lt;header&gt;, &lt;footer&gt; and &lt;article&gt; are all considered semantic 
-      because they accurately describe the purpose of the element and the type of content that is inside them.
-      The code is much easier to read.</p>
-      <div class="figure">
-        <img>
-        <div class="figcaption"></div>
-      </div>
-    </div>
-  </div>
-  <div id="footer"></div>
+  <header id="large" style="font-size: 10px;"><h1>This is the about semantic html</h1></div></header>
+   <section class="sect">   
+    <h2>Why semantic html?</h2>
+    <article>
+    <p>
+        Elements such as &lt;header&gt;, &lt;footer&gt; and &lt;article&gt; are all considered semantic 
+        because they accurately describe the purpose of the element and the type of content that is inside them.
+        The code is much easier to read.
+    </p>
+       <figure>
+        <img src="images/appa.jpg" 
+        alt="Appa flying through the sky"
+        width= "200"
+        height= "auto">
+        <figcaption id="figcapt">Wow look at him go! (I put the text here with figcaption)</figcaption>
+      </figure>
+      </article>
+    </section>
+  <footer>
+  <footer id="wahoo">
+  Example of Semantic Markage in HTML
+</footer>
 </body>
 </html>
